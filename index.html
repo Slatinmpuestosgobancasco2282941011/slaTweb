@@ -28,6 +28,10 @@
       margin: 0;
       padding: 0;
       transition: 0.3s;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
     }
 
     /* ENCABEZADO */
@@ -38,6 +42,8 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      width: 100%;
+      box-sizing: border-box;
     }
 
     .header-title {
@@ -72,16 +78,14 @@
       font-size: 1.3rem;
       font-weight: 600;
       color: var(--btn-color);
-      margin-top: 25px;
+      margin: 25px 0 15px 0;
+      width: 100%;
     }
 
-    /* CONTENEDOR PRINCIPAL - MÁS ALARGADO Y MENOS ANCHO */
+    /* CONTENEDOR PRINCIPAL - CENTRADO */
     .container {
-      width: 340px; /* Reducido el ancho */
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 25px;
-      margin-bottom: 25px;
+      width: 340px;
+      margin: 0 auto 30px auto;
       background-color: var(--box-color);
       padding: 20px 25px;
       border-radius: 28px;
@@ -166,7 +170,7 @@
 
     @media (max-width: 500px) {
       .container {
-        margin: 15px;
+        margin: 0 auto 20px auto;
         width: 85%;
         max-width: 340px;
       }
@@ -190,7 +194,7 @@
   <!-- TÍTULO FUERA DEL CUADRO -->
   <div class="titulo-principal">Datos del Comprobante QR</div>
 
-  <!-- CONTENEDOR DE DATOS - MÁS ALARGADO Y MENOS ANCHO -->
+  <!-- CONTENEDOR DE DATOS - CENTRADO -->
   <div class="container" id="comprobante">
     <div class="separator"></div>
 
@@ -273,6 +277,3 @@
   </script>
 </body>
 </html>
-
-
-
